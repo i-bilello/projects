@@ -19,7 +19,8 @@ def main():
 
 @st.cache
 def load_data():
-    df = pd.read_csv('networkproejctions.csv')
+    url = 'https://raw.githubusercontent.com/i-bilello/projects/main/networkproejctions.csv'
+    df = pd.read_csv(url)
     return df
 
 def visualize_data(df, x_axis, y_axis):
